@@ -15,7 +15,7 @@ const projects = [
         viewBox="0 0 220 160"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full max-w-[220px]"
+        className="w-full max-w-55"
       >
         <rect x="10" y="100" width="200" height="4" fill="#CBCFC2" />
         <circle cx="60" cy="118" r="20" stroke="#2450E0" strokeWidth="4" />
@@ -108,11 +108,11 @@ export default function Projects() {
       <div className="mx-auto max-w-5xl px-6 sm:px-8">
         <Reveal className="mb-12 flex flex-wrap items-baseline justify-between gap-4">
           <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-            Selected work
+            Projects
           </h2>
-          <span className="font-mono text-[13px] text-blue-deep">
+          {/* <span className="font-mono text-[13px] text-blue-deep">
             04 — PROJECTS
-          </span>
+          </span> */}
         </Reveal>
 
         <div className="space-y-7">

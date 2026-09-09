@@ -1,18 +1,21 @@
-'use client';
+"use client";
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-line-strong/70 bg-paper/85 backdrop-blur-md">
+    <header className="sticky shadow top-0 z-50 border-b border-line-strong/70 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 sm:px-8">
-        <a href="#" className="flex items-center gap-2 font-display text-[17px] font-semibold">
+        <a
+          href="#"
+          className="flex items-center gap-2 font-display text-[17px] font-semibold"
+        >
           <span className="inline-block h-2 w-2 rounded-full bg-blue" />
           Sadman Ahmed Alvi
         </a>

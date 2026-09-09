@@ -1,6 +1,5 @@
 "use client";
 import Reveal from "@/components/Reveal/Reveal";
-// import Reveal from "@/components/Reveal";
 
 const education = [
   {
@@ -26,11 +25,11 @@ export default function About() {
       <div className="mx-auto max-w-5xl px-6 sm:px-8">
         <Reveal className="mb-12 flex flex-wrap items-baseline justify-between gap-4">
           <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-            About &amp; education
+            Experience &amp; Education
           </h2>
-          <span className="font-mono text-[13px] text-blue-deep">
+          {/* <span className="font-mono text-[13px] text-blue-deep">
             01 — BACKGROUND
-          </span>
+          </span> */}
         </Reveal>
 
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">

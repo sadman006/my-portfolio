@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -28,10 +28,10 @@ body {
 body {
   background-color: #f5f6f1;
   color: #101b24;
-}
+} */
 
 /* Container Styles */
-.container {
+/* .container {
   width: 85vw;
   max-width: 1532px;
   margin: auto;
@@ -44,12 +44,48 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+} */
+
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
 }
 
-/* :root {
-  --background: #e2e8f0;
-  --foreground: #0f172a;
-  --text: #0f172a;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
-} */
+body {
+  /* background-color: #f5f6f1; */
+  background-color: #02021f;
+  color: #f5f6f1;
+}
+
+::selection {
+  background: #2450e0;
+  color: #fff;
+}
+
+/* soft glowing orbs used behind the hero for an aesthetic, animated backdrop */
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.section-divider {
+  border-top: 1px solid #e4e6de;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-blob,
+  .animate-blob-slow,
+  .animate-fade-up {
+    animation: none !important;
+  }
+}

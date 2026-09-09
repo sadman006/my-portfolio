@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ export default function Hero() {
       {/* animated aesthetic backdrop — replaces the old grid */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="orb animate-blob absolute -left-24 top-[-10%] h-72 w-72 bg-blue-tint sm:h-96 sm:w-96" />
-        <div className="orb animate-blob-slow absolute right-[-8%] top-[8%] h-72 w-72 bg-amber/25 sm:h-[26rem] sm:w-[26rem]" />
+        <div className="orb animate-blob-slow absolute right-[-8%] top-[8%] h-72 w-72 bg-amber/25 sm:h-104 sm:w-104" />
         <div className="orb animate-blob absolute bottom-[-15%] left-[20%] h-64 w-64 bg-blue/10" />
       </div>
 
@@ -35,72 +35,65 @@ export default function Hero() {
         className="mx-auto grid max-w-5xl grid-cols-1 gap-14 px-6 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16"
       >
         <div>
+          <motion.h1
+            variants={item}
+            className="font-display text-[42px] font-semibold leading-[1.05] sm:text-5xl"
+          >
+            Sadman Ahmed Alvi
+          </motion.h1>
+
           <motion.div
             variants={item}
-            className="mb-6 flex items-center gap-3 text-[13px] tracking-wide text-blue-deep"
+            className="mt-3 items-center gap-3 text-[13px] tracking-wide text-emerald-500"
           >
             <span className="h-px w-9 text-blue-500" />
             FRONTEND DEVELOPER & UI Enthusiast· BASED IN BANGLADESH
           </motion.div>
 
-          <motion.h1
-            variants={item}
-            className="font-display text-[42px] font-semibold leading-[1.05] sm:text-6xl"
-          >
-            Sadman Ahmed
-            <br />
-            Alvi
-          </motion.h1>
-
           <motion.p
             variants={item}
             className="mt-4 font-display text-lg font-medium text-ink-soft sm:text-xl"
           >
-            I build fast, clean, and reliable interfaces with React.
+            I build modern, scalable, and user-focused web experiences with
+            React and Next.js.
           </motion.p>
 
           <motion.p variants={item} className="mt-6 max-w-[52ch] text-ink-soft">
-            Over a year of hands-on experience building production interfaces as
-            a Frontend Developer Trainee at Singularity Limited — turning
-            designs into responsive, component-driven React applications.
+            Frontend Developer with 1.5+ years of hands-on experience building
+            production-ready applications. I specialize in React, Next.js,
+            responsive UI development, and API integration — transforming ideas
+            and designs into clean, performant, and maintainable web
+            experiences.
           </motion.p>
 
-          <motion.div variants={item} className="mt-9 flex flex-wrap gap-3">
+          <motion.div variants={item} className="mt-9 flex items-center gap-5">
             <a
               href="mailto:sadmanahmedalvi3287@gmail.com"
-              className="inline-flex text-white bg-green-600 hover:bg-green-700 hover:border-gray-200 items-center gap-2 border border-ink bg-ink px-5 py-[11px] text-sm font-medium text-paper rounded-lg transition-colors "
+              className="inline-flex items-center rounded-lg border border-line-strong px-5 py-2.75 text-sm font-medium text-ink transition-all hover:border-ink hover:bg-panel"
             >
-              Get in touch
+              Hire Me
             </a>
+
             <a
-              href="https://github.com/sadman006"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex text-white bg-black items-center gap-2 rounded-lg border border-line-strong px-5 py-[11px] text-sm font-medium transition-colors"
+              href="/cv.pdf"
+              download="Sadman-Ahmed-Alvi-CV.pdf"
+              className="text-sm font-medium text-ink-soft border border-line-strong rounded-lg px-5 py-2.75 underline-offset-4 transition-colors hover:text-ink"
             >
-              GitHub ↗
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sadman-ahmed-alvi-184939331"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex text-white bg-blue-500 hover:bg-blue-700 rounded-lg items-center gap-2 border border-line-strong px-5 py-[11px] text-sm font-medium transition-colors hover:border-blue hover:text-blue-deep"
-            >
-              LinkedIn ↗
+              Download CV
             </a>
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           variants={item}
           whileHover={{ y: -4 }}
           transition={{ type: "spring", stiffness: 200, damping: 20 }}
           className="overflow-hidden rounded-lg border border-line-strong bg-panel shadow-[0_20px_50px_-25px_rgba(16,27,36,0.35)]"
         >
-          <div className="flex items-center gap-2 border-b border-line bg-blue-tint px-4 py-[11px]">
-            <span className="h-[9px] w-[9px] rounded-full bg-[#E4664B]" />
-            <span className="h-[9px] w-[9px] rounded-full bg-[#E8B84B]" />
-            <span className="h-[9px] w-[9px] rounded-full bg-[#5FB86E]" />
+          <div className="flex items-center gap-2 border-b border-line bg-blue-tint px-4 py-2.75">
+            <span className="h-2.25 w-2.25 rounded-full bg-[#E4664B]" />
+            <span className="h-2.25 w-2.25 rounded-full bg-[#E8B84B]" />
+            <span className="h-2.25 w-2.25 rounded-full bg-[#5FB86E]" />
             <span className="ml-2 font-mono text-xs text-ink-soft">
               profile.jsx
             </span>
@@ -142,7 +135,7 @@ export default function Hero() {
             {`,
 };`}
           </pre>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );
