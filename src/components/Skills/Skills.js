@@ -100,7 +100,7 @@ export default function Skills() {
         <Reveal className="mb-12">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <h2 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-              MY SKILLS
+              SKILLS & TECHNOLOGIES
             </h2>
           </div>
         </Reveal>
@@ -145,7 +145,7 @@ export default function Skills() {
                       mb-5 flex h-16 w-16
                       items-center justify-center
                       rounded-2xl
-                      bg-gradient-to-b from-[#05C89A]/25
+                      bg-gradient-to-b from-[#2F4F4F]/25
                       
                       transition-all duration-300
                       group-hover:scale-110
@@ -154,7 +154,7 @@ export default function Skills() {
                     <Icon
                       style={{ color: skill.color }}
                       className="
-                        h-8 w-8
+                        h-10 w-10
                         transition-transform duration-300
                       "
                     />

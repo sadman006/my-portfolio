@@ -46,7 +46,7 @@ export default function Hero() {
             variants={item}
             className="mt-3 items-center gap-3 text-[13px] tracking-wide text-emerald-500"
           >
-            <span className="h-px w-9 text-blue-500" />
+            <span className="h-px w-9" />
             FRONTEND DEVELOPER & UI Enthusiast· BASED IN BANGLADESH
           </motion.div>
 
@@ -69,7 +69,7 @@ export default function Hero() {
           <motion.div variants={item} className="mt-9 flex items-center gap-5">
             <a
               href="mailto:sadmanahmedalvi3287@gmail.com"
-              className="inline-flex items-center rounded-lg border border-line-strong px-5 py-2.75 text-sm font-medium text-ink transition-all hover:border-ink hover:bg-panel"
+              className="inline-flex items-center hover:bg-white hover:text-black rounded-lg border border-line-strong px-5 py-2.75 text-sm font-medium text-ink transition-all hover:border-ink hover:bg-panel"
             >
               Hire Me
             </a>
@@ -77,7 +77,7 @@ export default function Hero() {
             <a
               href="/cv.pdf"
               download="Sadman-Ahmed-Alvi-CV.pdf"
-              className="text-sm font-medium text-ink-soft border border-line-strong rounded-lg px-5 py-2.75 underline-offset-4 transition-colors hover:text-ink"
+              className="text-sm font-medium hover:bg-white hover:text-black text-ink-soft border border-line-strong rounded-lg px-5 py-2.75 underline-offset-4 transition-colors hover:text-ink"
             >
               Download CV
             </a>

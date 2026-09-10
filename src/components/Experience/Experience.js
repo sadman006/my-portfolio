@@ -1,59 +1,127 @@
 "use client";
+
 import Reveal from "@/components/Reveal/Reveal";
-// import Reveal from "@/components/Reveal";
 
 const highlights = [
-  "Built and maintained user-facing features for live client websites using React.js, working from design files through to deployed, responsive UI.",
-  "Converted static designs into reusable, component-based layouts styled with Tailwind CSS.",
-  "Integrated REST APIs to render dynamic content and handle real application data.",
-  "Collaborated with senior developers and designers, using Git & GitHub for version control and code reviews as part of a team workflow.",
-  "Debugged cross-browser and responsiveness issues, and picked up practical habits for writing maintainable, production-grade code.",
+  "Developed and maintained responsive user-facing features for live client websites using React.js.",
+  "Translated design files into clean, reusable, component-based interfaces with Tailwind CSS.",
+  "Integrated REST APIs to display dynamic content and work with real application data.",
+  "Collaborated with senior developers and designers using Git and GitHub in a team-based workflow.",
+  "Debugged responsive and cross-browser issues while improving code quality and maintainability.",
 ];
 
 export default function Experience() {
   return (
     <section id="experience" className="section-divider py-20 sm:py-24">
-      <div className="mx-auto max-w-5xl px-6 sm:px-8">
-        <Reveal className="mb-12 flex flex-wrap items-baseline justify-between gap-4">
-          <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-            Experience
-          </h2>
-          <span className="font-mono text-[13px] text-blue-deep">
-            03 — WORK
-          </span>
-        </Reveal>
+      <div className="mx-auto max-w-6xl px-6 sm:px-8">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
+          {/* EXPERIENCE */}
+          <div>
+            <Reveal className="mb-6">
+              <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+                Experience
+              </h2>
+            </Reveal>
 
-        <Reveal delay={0.05}>
-          <div className="rounded-lg border border-line-strong bg-panel p-8 sm:p-10">
-            <div className="mb-6 flex flex-wrap items-start justify-between gap-6 border-b border-line pb-6">
-              <div>
+            <Reveal delay={0.05}>
+              <div className="rounded-md border border-line-strong bg-panel p-6 sm:p-7">
                 <h3 className="font-display text-xl font-semibold sm:text-2xl">
-                  Frontend Developer{" "}
-                  <span className="font-normal text-ink-soft">— Trainee</span>
+                  Frontend Developer
                 </h3>
-                <div className="font-semibold text-blue-deep">
-                  Singularity Limited
+
+                <div className="mt-1 text-[15px] font-semibold text-blue-deep">
+                  Singularity Limited{" "}
+                  <span className="text-emerald-400">(2024 — Present)</span>
                 </div>
+
+                <ul className="mt-5 space-y-3">
+                  {highlights.map((line) => (
+                    <li
+                      key={line}
+                      className="flex gap-2 text-[14px] leading-5 text-ink-soft"
+                    >
+                      <span className="shrink-0 text-blue">✓</span>
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="text-right text-sm text-ink-soft">
-                1+ year
-                <br />
-                On-site
-              </div>
-            </div>
-            <ul className="space-y-3.5">
-              {highlights.map((line) => (
-                <li
-                  key={line}
-                  className="relative pl-6 text-[15px] text-ink-soft"
-                >
-                  <span className="absolute left-0 top-0 text-blue">→</span>
-                  {line}
-                </li>
-              ))}
-            </ul>
+            </Reveal>
           </div>
-        </Reveal>
+
+          {/* EDUCATION */}
+          <div>
+            <Reveal className="mb-6">
+              <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+                Education History
+              </h2>
+            </Reveal>
+
+            <div className="space-y-5">
+              {/* University */}
+              <Reveal delay={0.05}>
+                <div className="rounded-md border border-line-strong bg-panel p-6 sm:p-7">
+                  <h3 className="font-display text-xl font-semibold sm:text-2xl">
+                    B.Sc in Computer Science & Engineering
+                  </h3>
+
+                  <div className="mt-1 text-[15px] font-semibold text-blue-deep">
+                    American International University Bangladesh (AIUB){" "}
+                    <span className="text-emerald-400">
+                      <br />
+                      (2020 — 2024)
+                    </span>
+                  </div>
+
+                  <p className="mt-4 text-[14px] leading-5 text-ink-soft">
+                    Completed My Bachelor of Science in Computer Science &
+                    Engineering at American International University Bangladesh
+                    - AIUB
+                  </p>
+                </div>
+              </Reveal>
+
+              {/* School & College */}
+              <Reveal delay={0.1}>
+                <div className="rounded-md border border-line-strong bg-panel p-6 sm:p-7">
+                  <h3 className="font-display text-xl font-semibold sm:text-2xl">
+                    School & College
+                  </h3>
+
+                  <div className="mt-4 space-y-5">
+                    {/* School */}
+                    <div>
+                      <h4 className="text-[16px] text-gray-200 font-semibold">
+                        Cumilla Zilla School, Cumilla{" "}
+                        <span className="text-emerald-400">(2012 — 2017)</span>
+                      </h4>
+
+                      {/* <div className="mt-1 text-[14px] font-semibold text-blue-deep">
+                        Cumilla, Bangladesh{" "}
+                        <span className="text-emerald-400"></span>
+                      </div> */}
+
+                      <p className="mt-2 text-[14px] leading-5 text-ink-soft">
+                        Completed Secondary School Education.
+                      </p>
+                    </div>
+
+                    {/* College */}
+                    <div className="border-t border-line pt-5">
+                      <h4 className="text-[16px] font-semibold">
+                        Cumilla Government College, Cumilla{" "}
+                        <span className="text-emerald-400">(2017 — 2019)</span>
+                      </h4>
+                      <p className="mt-2 text-[14px] leading-5 text-ink-soft">
+                        Completed Higher Secondary Education.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky shadow top-0 z-50 border-b border-line-strong/70 bg-paper/85 backdrop-blur-md">
+    <header className="sticky shadow top-0 z-50 border-b border-slate-700/70 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 sm:px-8">
         <a
           href="#"
