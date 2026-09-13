@@ -69,7 +69,7 @@ export default function Contact() {
                     id="name"
                     type="text"
                     name="name"
-                    placeholder="name"
+                    placeholder="Write name"
                     className="w-full rounded-lg border border-[#596579] bg-[#394457] px-3 py-3 text-sm text-white outline-none placeholder:text-[#9aa6b8] transition-all duration-200 focus:border-[#08c9a5] focus:ring-1 focus:ring-[#08c9a5]"
                   />
                 </div>

@@ -105,11 +105,11 @@ export default function Hero() {
           {/* Profile image area */}
           <div className="relative flex justify-center">
             {/* Outer decorative rings */}
-            <div className="absolute top-1/2 h-[340px] w-[340px] -translate-y-1/2 rounded-full border border-cyan-300/10" />
+            <div className="absolute top-1/2 h-85 w-85 -translate-y-1/2 rounded-full border border-cyan-300/10" />
 
-            <div className="absolute top-1/2 h-[310px] w-[310px] -translate-y-1/2 rounded-full border border-cyan-300/10 shadow-[0_0_60px_rgba(34,211,238,0.08)]" />
+            <div className="absolute top-1/2 h-77.5 w-77.5 -translate-y-1/2 rounded-full border border-cyan-300/10 shadow-[0_0_60px_rgba(34,211,238,0.08)]" />
 
-            <div className="absolute top-1/2 h-[285px] w-[285px] -translate-y-1/2 rounded-full bg-cyan-400/5 blur-xl" />
+            <div className="absolute top-1/2 h-71.25 w-71.25 -translate-y-1/2 rounded-full bg-cyan-400/5 blur-xl" />
 
             {/* Image */}
             <div className="relative z-10 h-64 w-64 overflow-hidden rounded-full border border-white/10 bg-[#dce4e5] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] sm:h-72 sm:w-72">

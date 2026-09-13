@@ -116,7 +116,7 @@ export default function Skills() {
                   className="
                     group relative overflow-hidden
                     flex flex-col items-center justify-center
-                    min-h-[190px]
+                    min-h-47.5
                     rounded-xl
                     
                     bg-gray-800
@@ -145,7 +145,7 @@ export default function Skills() {
                       mb-5 flex h-16 w-16
                       items-center justify-center
                       rounded-2xl
-                      bg-gradient-to-b from-[#2F4F4F]/25
+                      bg-linear-to-b from-[#2F4F4F]/25
                       
                       transition-all duration-300
                       group-hover:scale-110

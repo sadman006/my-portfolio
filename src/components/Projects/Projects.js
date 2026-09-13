@@ -42,26 +42,6 @@ const projects = [
     liveUrl: "https://rirobd.com/",
     detailsUrl: "#",
   },
-  // {
-  //   tagline: "PERSONAL PROJECT",
-  //   name: "Project Four",
-  //   image: "/p.jpg",
-  //   description:
-  //     "A clean and scalable web application built with modern frontend technologies.",
-  //   stack: ["React", "JavaScript", "API"],
-  //   liveUrl: "#",
-  //   detailsUrl: "#",
-  // },
-  // {
-  //   tagline: "PERSONAL PROJECT",
-  //   name: "Project Five",
-  //   image: "/projects/project-5.jpg",
-  //   description:
-  //     "A responsive digital product with a focus on performance and user experience.",
-  //   stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
-  //   liveUrl: "#",
-  //   detailsUrl: "#",
-  // },
 ];
 
 export default function Projects() {
