@@ -169,7 +169,7 @@ export default function Skills() {
                   <p
                     className="
                       font-mono
-                      text-[9px]
+                      text-[12px]
                       font-medium
                       tracking-[0.28em]
                       text-ink-soft

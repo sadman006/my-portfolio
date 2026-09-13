@@ -12,55 +12,56 @@ import "swiper/css";
 
 const projects = [
   {
-    tagline: "RUNNER GROUP · YADEA",
+    // tagline: "RUNNER GROUP · YADEA",
     name: "Yadea Bangladesh",
     image: "/yadea.jpg",
     description:
       "The official web presence for Yadea's electric scooter lineup in Bangladesh, brought to market by Runner Automobiles.",
     stack: ["React", "Tailwind CSS", "REST API", "Responsive UI"],
-    liveUrl: "#",
+    liveUrl: "https://yadearunner.com/",
     detailsUrl: "#",
   },
   {
-    tagline: "CG RUNNER BD · BYD",
+    // tagline: "CG RUNNER BD · BYD",
     name: "BYD Bangladesh",
     image: "/byd.jpg",
     description:
       "The Bangladesh website for BYD, the global new-energy vehicle manufacturer.",
     stack: ["React", "Next.js", "Tailwind CSS", "Git & GitHub"],
-    liveUrl: "#",
+    liveUrl: "https://bydauto.com.bd/",
     detailsUrl: "#",
   },
   {
-    tagline: "PERSONAL PROJECT",
+    // tagline: "PERSONAL PROJECT",
     name: "Riro BD",
     image: "/riro.jpg",
     description:
-      "A modern responsive web experience focused on clean UI and smooth interactions.",
+      "A modern product-focused website designed to showcase Riro's collection of smart gadgets through an intuitive interface, responsive layouts, and a seamless browsing experience.",
+
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    liveUrl: "#",
+    liveUrl: "https://rirobd.com/",
     detailsUrl: "#",
   },
-  {
-    tagline: "PERSONAL PROJECT",
-    name: "Project Four",
-    image: "/p.jpg",
-    description:
-      "A clean and scalable web application built with modern frontend technologies.",
-    stack: ["React", "JavaScript", "API"],
-    liveUrl: "#",
-    detailsUrl: "#",
-  },
-  {
-    tagline: "PERSONAL PROJECT",
-    name: "Project Five",
-    image: "/projects/project-5.jpg",
-    description:
-      "A responsive digital product with a focus on performance and user experience.",
-    stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    detailsUrl: "#",
-  },
+  // {
+  //   tagline: "PERSONAL PROJECT",
+  //   name: "Project Four",
+  //   image: "/p.jpg",
+  //   description:
+  //     "A clean and scalable web application built with modern frontend technologies.",
+  //   stack: ["React", "JavaScript", "API"],
+  //   liveUrl: "#",
+  //   detailsUrl: "#",
+  // },
+  // {
+  //   tagline: "PERSONAL PROJECT",
+  //   name: "Project Five",
+  //   image: "/projects/project-5.jpg",
+  //   description:
+  //     "A responsive digital product with a focus on performance and user experience.",
+  //   stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
+  //   liveUrl: "#",
+  //   detailsUrl: "#",
+  // },
 ];
 
 export default function Projects() {
@@ -141,9 +142,9 @@ export default function Projects() {
                   <div className="absolute inset-x-4 bottom-4">
                     <div className="rounded-xl bg-white/5 p-5 shadow-2xl backdrop-blur-xl">
                       {/* Tagline */}
-                      <div className="mb-2 font-mono text-[10px] tracking-wider text-white/70">
+                      {/* <div className="mb-2 font-mono text-[10px] tracking-wider text-white/70">
                         {project.tagline}
-                      </div>
+                      </div> */}
 
                       {/* Name */}
                       <h3 className="mb-2 font-display text-xl font-semibold text-white">

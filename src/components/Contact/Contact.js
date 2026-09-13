@@ -131,7 +131,7 @@ export default function Contact() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-[#08c9a5] py-3.5 text-sm font-bold text-white transition-all duration-200 hover:bg-[#06b994] hover:shadow-lg hover:shadow-[#08c9a5]/20 active:scale-[0.99]"
+                  className="w-full rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 py-3.5 text-sm font-bold text-white transition-all duration-200 hover:shadow-lg hover:shadow-[#08c9a5]/20 active:scale-[0.99]"
                 >
                   Submit
                 </button>

@@ -31,7 +31,7 @@ export default function Experience() {
 
                 <div className="mt-1 text-[15px] font-semibold text-blue-deep">
                   Singularity Limited{" "}
-                  <span className="text-emerald-400">(2024 — Present)</span>
+                  <span className="text-emerald-400">(2025 — Present)</span>
                 </div>
 
                 <ul className="mt-5 space-y-3">

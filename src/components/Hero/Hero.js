@@ -1,6 +1,7 @@
 // "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const container = {
   hidden: {},
@@ -59,7 +60,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.p variants={item} className="mt-6 max-w-[52ch] text-ink-soft">
-            Frontend Developer with 1.5+ years of hands-on experience building
+            Frontend Developer with 1+ years of hands-on experience building
             production-ready applications. I specialize in React, Next.js,
             responsive UI development, and API integration — transforming ideas
             and designs into clean, performant, and maintainable web
@@ -84,58 +85,55 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* <motion.div
+        <motion.div
           variants={item}
           whileHover={{ y: -4 }}
           transition={{ type: "spring", stiffness: 200, damping: 20 }}
-          className="overflow-hidden rounded-lg border border-line-strong bg-panel shadow-[0_20px_50px_-25px_rgba(16,27,36,0.35)]"
+          className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#071525] px-8 pb-8 pt-10 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]"
         >
-          <div className="flex items-center gap-2 border-b border-line bg-blue-tint px-4 py-2.75">
-            <span className="h-2.25 w-2.25 rounded-full bg-[#E4664B]" />
-            <span className="h-2.25 w-2.25 rounded-full bg-[#E8B84B]" />
-            <span className="h-2.25 w-2.25 rounded-full bg-[#5FB86E]" />
-            <span className="ml-2 font-mono text-xs text-ink-soft">
-              profile.jsx
-            </span>
+          {/* Background glow */}
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute -top-32 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
+
+            <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-blue-600/10 blur-3xl" />
+
+            <div className="absolute -bottom-32 -right-20 h-72 w-72 rounded-full bg-indigo-500/10 blur-3xl" />
+
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_25%,rgba(34,211,238,0.08),transparent_35%)]" />
           </div>
-          <pre className="overflow-x-auto px-5 py-6 font-mono text-[13px] leading-[1.75] text-ink">
-            {`const developer = {
-  name: `}
-            <span className="text-[#B5541F]">
-              &quot;Sadman Ahmed Alvi&quot;
-            </span>
-            {`,
-  role: `}
-            <span className="text-[#B5541F]">
-              &quot;Frontend Developer&quot;
-            </span>
-            {`,
-  company: `}
-            <span className="text-[#B5541F]">
-              &quot;Singularity Limited&quot;
-            </span>
-            {`,
-  experience: `}
-            <span className="text-[#B5541F]">
-              &quot;1+ year (Trainee)&quot;
-            </span>
-            {`,
-  stack: [`}
-            <span className="text-[#B5541F]">&quot;React&quot;</span>
-            {`, `}
-            <span className="text-[#B5541F]">&quot;Next.js&quot;</span>
-            {`, `}
-            <span className="text-[#B5541F]">&quot;Tailwind&quot;</span>
-            {`],
-  `}
-            <span className="italic text-ink-soft">{"// currently"}</span>
-            {`
-  openToWork: `}
-            <span className="text-blue-deep">true</span>
-            {`,
-};`}
-          </pre>
-        </motion.div> */}
+
+          {/* Profile image area */}
+          <div className="relative flex justify-center">
+            {/* Outer decorative rings */}
+            <div className="absolute top-1/2 h-[340px] w-[340px] -translate-y-1/2 rounded-full border border-cyan-300/10" />
+
+            <div className="absolute top-1/2 h-[310px] w-[310px] -translate-y-1/2 rounded-full border border-cyan-300/10 shadow-[0_0_60px_rgba(34,211,238,0.08)]" />
+
+            <div className="absolute top-1/2 h-[285px] w-[285px] -translate-y-1/2 rounded-full bg-cyan-400/5 blur-xl" />
+
+            {/* Image */}
+            <div className="relative z-10 h-64 w-64 overflow-hidden rounded-full border border-white/10 bg-[#dce4e5] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] sm:h-72 sm:w-72">
+              <Image
+                src="/1.png"
+                alt="Sadman Ahmed Alvi"
+                width={300}
+                height={300}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Bottom information */}
+          <div className="relative z-10 mt-10 text-center">
+            <p className="font-mono text-[18px] font-medium uppercase tracking-[0.28em] text-cyan-300/70">
+              Frontend Developer
+            </p>
+
+            <p className="mt-3 font-mono text-[14px] uppercase tracking-[0.22em] text-white/40">
+              Open for Contract
+            </p>
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );
